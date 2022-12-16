@@ -1,0 +1,482 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+
+body {
+
+  background: url('');
+background-color: white;
+background-image: url("apparence/paper_jaune.jpg"); 
+background-position:  0px 0, 0px 0, 0 0, 0 0;
+background-size: 3%;
+background-repeat: repeat;
+
+  color: #69c9fb;
+  cursor: url(''), auto;
+
+  font-family: 'Nerko One';
+  font-size: 25px;
+}
+
+
+
+
+.name {
+  width: 400px;
+ 
+  margin: 3% 0% 3% 55%;
+}
+
+.chat{
+	position: absolute;
+	top: 6%;
+	left: 32%;
+	width: 300px;
+	height: width;
+	z-index: 1;
+}
+
+
+.tout_sauf_titre {
+  position: absolute;
+  top: 40%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+.presentation {
+  background-color: white;
+background-image: url("apparence/paper_bleu.jpg");
+background-position:  0px 0, 0px 0, 0 0, 0 0;
+background-size: 10%;
+background-repeat: repeat;
+  height: 100%;
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin: 0% 4% 4% 4%;
+  padding: 2%;
+
+  color: white;
+}
+
+.presentation ::selection {
+ color: orange;
+ background: white;
+}
+
+.presentation .text {}
+
+.presentation .liens {
+  font-weight: ;
+}
+
+.presentation a {
+  color: white;
+  font-weight: ;
+  text-decoration: underline dashed;
+}
+
+.presentation a:hover {
+  color: orange;
+}
+
+
+
+
+.projets {
+   background-color: white;
+background-image: url("apparence/paper_blanc.jpg"); 
+background-position:  0px 0, 0px 0, 0 0, 0 0;
+background-size: 10%;
+background-repeat: repeat;
+
+  width: 55%;
+  height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  margin-bottom: 5%;
+  padding: 3%;
+}
+
+.projets ::selection {
+ color: white;
+ background: orange;
+}
+
+.projets .tous {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projets .chacun {
+  padding: 2%;
+}
+
+.projets .titre {
+  text-align: center;
+  align-self: center;
+
+  font-size: 30px;
+  font-weight: ;
+  position:relative
+  z-index: 1;
+}
+
+.projets a {
+  text-decoration: none;
+}
+
+.projets a :hover {
+  color: orange;
+}
+
+.projets .chacun img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10%;
+
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+}
+@keyframes bounce {
+  0%  { transform: rotate(15deg); }
+  50%  { transform: rotate(-15deg); }
+  100%  { transform: rotate(15deg);  }
+}
+
+
+
+
+.projets a,.ariane a{
+	color: #33ccff;
+	font-weight: ;
+}
+
+.projets a:hover,.ariane a:hover{
+  font-weight: ;
+	color: orange;	
+}
+
+
+
+
+.ariane {
+  padding-bottom: 5%;
+}
+
+.ariane ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.ariane li {
+  
+}
+
+.ariane li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 .25rem;
+  content: "/";
+}
+
+.ariane a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+.face {
+
+  position: absolute;
+  top: 12.5%;
+  left: 35.3%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  -webkit-transform: rotate(-7deg);
+}
+
+/*In this part we will make
+            the eyes of the face*/
+.eyes {
+  position: relative;
+  top: 0px;
+  display: flex;
+}
+
+.eyes .eye {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  display: block;
+  background: white;
+  margin: 0 13px;
+  border-radius: 50%;
+}
+
+.eyes .eye::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 37px;
+  height: 37px;
+  background: black;
+  border-radius: 50%;
+}
+
+
+
+
+#retour {
+  margin: 0% 5% 5% 5%;
+}
+
+.projets p{
+  margin: 5% 5% 5% 5%;
+}
+
+
+
+
+.video{
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  align-self: center;
+}
+
+.video::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#invisible{
+	opacity: 0%;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name{    
+    align-self: center;
+    margin: 5% 0 5% 0;
+  }
+
+  .eyes {
+    display: none;
+  }
+
+  .tout_sauf_titre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .presentation {
+    width: auto;
+    margin: 2% 5% 0 5%;
+    padding: 5%;
+    background-size: 5%;
+  }
+
+  .projets {
+    width: auto;
+    margin: 5%;
+    padding: 5%;
+  }
+
+
+  .chat{display:none;}
+
+.projets .chacun {
+  margin-top: 8%;
+}
+}
+
+
+
+@media screen and (max-width: 560px) {
+ 
+ #invisible{
+ 	display: none;
+ }
+
+}
+
+
+
+
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 800px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}

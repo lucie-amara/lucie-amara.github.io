@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang=fr>
+  <head>
+    <meta charset="utf-8">
+    <title>la taverne</title>
+
+    <link href="taverne.css" rel="stylesheet" type="text/css" media="all">
+    <link href="index.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="apparence/icon.png"/>
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nerko One">
+
+
+  </head>
+  <body>
+         
+    <img class="name"src="apparence/name.png" alt="">
+
+    <img class="chat"src="apparence/chat.png" alt="">      
+
+        <div class="face">
+            <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+        </div>
+        
+       
+        <script>
+            document.querySelector(
+            "body").addEventListener("mousemove", eyeball);
+            function eyeball() {
+                var eye = document.querySelectorAll(".eye");
+                eye.forEach(function (eye) {
+                    let x =
+        eye.getBoundingClientRect().left + eye.clientWidth / 2;
+                    let y =
+        eye.getBoundingClientRect().top + eye.clientHeight / 2;
+                    let radian =
+                Math.atan2(event.pageX - x, event.pageY - y);
+                    let rot =
+            radian * (180 / Math.PI) * -1 + 270;
+                    eye.style.transform =
+                    "rotate(" + rot + "deg)";
+                });
+            }
+        </script>
+
+
+
+          <div class="tout_sauf_titre">
+
+
+     <section class="presentation">
+
+         <p class="text">Etudiante en 3ème année de licence Etudes Visuelles Médias et Arts Numériques à l’université Gustave Eiffel.</p>
+
+          </br>
+
+          <ul class="liens">
+       <li>
+          <p>amara.lucie[at]orange.fr</p>         
+        </li>
+
+          </ul>
+
+    </section>
+
+      
+    
+    <section class="projets">
+
+    	 <nav class="ariane">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><span aria-current="page">La Taverne (2021)</span></li>
+    </ul>
+</nav>
+
+<div class="video">
+    <iframe width="560"
+  height="315" src="https://www.youtube.com/embed/GtnTz_4wmzk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>
+     Après l'accomplissement d'une nouvelle quête épique, vous vous accordez une halte bien méritée au refuge des voyageurs : la Taverne. Dans une ambiance chaotique et conviviale, vous pariez vos maigres économies en jouant aux dés contre des adversaires un peu louches. Vos gains vous permettront de savourer les succulentes boissons proposées à la carte en sympathisant avec les autres clients.
+
+     </br></br>
+
+     Réalisé sur Sublime Text, après deux semestres de cours de HTML et CSS en licence EVMAN. Dessins et animations sur Paint Tool Sai.
+
+</p>
+
+    <div class="chopes">
+
+    <img class="chopes_img" src="files\taverne\chope1.png" alt="">
+
+    <img class="chopes_img" src="files\taverne\chope2.png" alt="">
+
+    <img class="chopes_img" src="files\taverne\chope3.png" alt="">
+
+    <img class="chopes_img" src="files\taverne\chope4.png" alt="">
+
+    <img class="chopes_img" src="files\taverne\chope5.png" alt="">
+
+    </div>
+
+     <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+  <script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('chopes_img');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+
+
+
+  <div class="persos">
+
+    <img class="persos_img" src="files\taverne\perso_1_2.gif" alt="">
+
+    <img class="persos_img" src="files\taverne\perso_1_1.gif" alt="">
+
+    <img class="persos_img" src="files\taverne\perso_1_3.gif" alt="">
+
+
+
+    <img class="persos_img" src="files\taverne\perso_2_2.gif" alt="">
+
+    <img class="persos_img" src="files\taverne\perso_2_1.gif" alt="">
+
+    <img class="persos_img" src="files\taverne\perso_2_3.gif" alt="">
+
+
+
+    <img class="persos_img" src="files\taverne\perso_3_2.gif" alt="">
+
+    <img class="persos_img" src="files\taverne\perso_3_1.gif" alt="">
+
+    <img class="persos_img" src="files\taverne\perso_3_3.gif" alt="">
+
+  </div>
+
+   <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+  <script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('persos_img');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+
+
+
+  <div class="scenes">
+
+    <img class="scenes_img" src="files\taverne\the.gif" alt="">
+
+    <img class="scenes_img" src="files\taverne\diabolo.gif" alt="">
+
+    <img class="scenes_img" src="files\taverne\petrole.gif" alt="">
+
+    <img class="scenes_img" src="files\taverne\chocolat.gif" alt="">
+
+    <img class="scenes_img" src="files\taverne\image.gif" alt="">
+
+    <img class="scenes_img" src="files\taverne\nope.gif" alt="">
+
+    </div>
+
+     <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+  <script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('scenes_img');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+
+
+    <a id="retour"href="index.html"> <- Retour </a>
+
+      
+    </section>
+
+</div>
+    
+    
+    
+  </body>  
+</html>

@@ -1,0 +1,3 @@
+Ouvrez le document index.html avec votre navigateur habituel.
+
+/!\ Ne modifiez ni l'emplacement ni le nom des fichiers dans le dossier "AMARA_Lucie_portfolio".

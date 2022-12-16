@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang=fr>
+  <head>
+    <meta charset="utf-8">
+    <title>starlette</title>
+
+    <link href="index.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" href="apparence/icon.png"/>
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nerko One">
+
+
+  </head>
+  <body>
+         
+    <img class="name"src="apparence/name.png" alt="">
+
+    <img class="chat"src="apparence/chat.png" alt=""> 
+
+     <div class="face">
+            <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+        </div>
+        
+       
+        <script>
+            document.querySelector(
+            "body").addEventListener("mousemove", eyeball);
+            function eyeball() {
+                var eye = document.querySelectorAll(".eye");
+                eye.forEach(function (eye) {
+                    let x =
+        eye.getBoundingClientRect().left + eye.clientWidth / 2;
+                    let y =
+        eye.getBoundingClientRect().top + eye.clientHeight / 2;
+                    let radian =
+                Math.atan2(event.pageX - x, event.pageY - y);
+                    let rot =
+            radian * (180 / Math.PI) * -1 + 270;
+                    eye.style.transform =
+                    "rotate(" + rot + "deg)";
+                });
+            }
+        </script>
+
+
+            <div class="tout_sauf_titre">
+        
+
+ <section class="presentation">
+
+         <p class="text">Etudiante en 3ème année de licence Etudes Visuelles Médias et Arts Numériques à l’université Gustave Eiffel.</p>
+
+          </br>
+
+           <ul class="liens">
+       <li>
+          <p>amara.lucie[at]orange.fr</p>         
+        </li>
+
+          </ul>
+
+    </section>
+
+      
+    
+    <section class="projets">
+
+    	 <nav class="ariane">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><span aria-current="page">Starlette (2022)</span></li>
+    </ul>
+</nav>
+
+<div class="video">
+    <iframe width="560"
+  height="315" src="https://www.youtube.com/embed/n99E_k5iG3I" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>
+
+Mon projet tutoré de deuxième année de licence a été supervisé par Maxime Boidy, Miguel Almiron et Marie Auger, et mené en partenariat avec le CNES (Centre National d’Etudes Spatiales). L’objectif était d’utiliser une sélection de leurs archives concernant l’aventure spatiale pour réaliser un projet créatif sur la thématique des non-humains dans l’espace.
+
+</br></br>
+
+Dans cette fiction vidéo, le satellite Starlette se désaxe de son orbite terrestre pour dériver dans l’espace. Le satellite échappe au contrôle humain et à la mission qui lui a été attribuée, pour mettre en valeur des interactions de nature différentes avec d’autres satellites minéraux et machiniques.
+
+</br></br>
+
+Réalisé avec les logiciels Adobe After Effect, Videopad et Reaper.
+
+</p>
+
+    <a id="retour"href="index.html"> <- Retour </a>
+
+      
+    </section>
+
+</div>
+    
+    
+    
+  </body>  
+</html>
