@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang=fr>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>accueil</title>
+
+      <link href="index.css" rel="stylesheet" type="text/css" media="all">
+      <link rel="shortcut icon" href="apparence/icon.png"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nerko One">
+
+
+  </head>
+  <body>
+
+          
+    <img class="name"src="apparence/name.png" alt="">
+
+    <img class="chat"src="apparence/chat.png" alt="">      
+
+        <div class="face">
+            <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+        </div>
+        
+       
+        <script>
+            document.querySelector(
+            "body").addEventListener("mousemove", eyeball);
+            function eyeball() {
+                var eye = document.querySelectorAll(".eye");
+                eye.forEach(function (eye) {
+                    let x =
+        eye.getBoundingClientRect().left + eye.clientWidth / 2;
+                    let y =
+        eye.getBoundingClientRect().top + eye.clientHeight / 2;
+                    let radian =
+                Math.atan2(event.pageX - x, event.pageY - y);
+                    let rot =
+            radian * (180 / Math.PI) * -1 + 270;
+                    eye.style.transform =
+                    "rotate(" + rot + "deg)";
+                });
+            }
+        </script>
+
+
+
+    <div class="tout_sauf_titre">
+
+
+     <section class="presentation">
+
+         <p class="text">Étudiante en 3ème année de licence Études Visuelles, Médias et Arts Numériques à l’université Gustave Eiffel.</p>
+
+          </br>
+
+         <ul class="liens">
+       <li>
+          <p>amara.lucie[at]orange.fr</p>         
+        </li>
+
+          </ul>
+
+    </section>
+
+      
+    
+    <section class="projets">
+
+
+       <nav class="ariane">
+    <ul>
+        <li><a>Accueil /</a></li>
+    </ul>
+</nav>
+
+
+
+      <ul class="tous">
+
+        <li class="chacun">
+          <a href="starlette.html">
+            <img class="bounce" src="apparence/starlette.png" alt="">
+            <p class="titre">projet tutoré </br> Starlette</p>       
+          </a>          
+        </li>
+
+        <li class="chacun">
+          <a href="affiches.html">
+            <img class="bounce" src="apparence/cirque.png" alt="">
+            <p class="titre">affiches de </br> cirque</p>            
+          </a>          
+        </li>
+
+        <li class="chacun">
+          <a href="taverne.html">
+            <img class="bounce" src="apparence/taverne.png" alt="">
+            <p class="titre">jeu de dés </br> La Taverne</p>         
+          </a>          
+        </li>
+
+        <li class="chacun">
+          <a href="clavier.html">
+            <img class="bounce" src="apparence/clavier.png" alt="">
+            <p class="titre">clavier </br> ornithologique</p>        
+          </a>          
+        </li>
+
+        <li class="chacun">
+          <a href="illustrations.html">
+            <img class="bounce" src="apparence/perso.png" alt="">
+            <p class="titre">illustrations </br> personnelles</p>    
+          </a>          
+        </li>
+
+
+         <li class="chacun" id="invisible">
+            <img class="bounce" src="apparence/perso.png" alt="">
+            <p class="titre">illustrations </br> personnelles</p>    
+          </a>          
+        </li>
+
+    
+
+      </ul>
+    </section>
+
+</div>
+
+
+  </body>  
+</html>
