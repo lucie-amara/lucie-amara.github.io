@@ -72,24 +72,30 @@ background-repeat: repeat;
 
 
 .name {
-  width: 400px;
- 
-  margin: 3% 0% 3% 55%;
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  
+  font-family: 'Courgette';
+  font-size: 100px;
+  font-weight: bolder;
+  color: white;
+
+  -webkit-filter: drop-shadow(5px 5px 0 orange);
+
 }
 
-.chat{
-	position: absolute;
-	top: 6%;
-	left: 32%;
-	width: 300px;
-	height: width;
-	z-index: 1;
+.name::selection {
+ color: #69c9fb;
+ background: white;
 }
+
+
 
 
 .tout_sauf_titre {
   position: absolute;
-  top: 40%;
+  top: 25%;
 
   display: flex;
   flex-direction: row;
@@ -216,7 +222,7 @@ background-repeat: repeat;
 
 
 .projets a,.ariane a{
-	color: #33ccff;
+	color: #69c9fb;
 	font-weight: ;
 }
 
@@ -255,66 +261,129 @@ background-repeat: repeat;
 
 
 
-
-
-
-.face {
-
-  position: absolute;
-  top: 12.5%;
-  left: 35.3%;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-
-  -webkit-transform: rotate(-7deg);
-}
-
-/*In this part we will make
-            the eyes of the face*/
-.eyes {
-  position: relative;
-  top: 0px;
-  display: flex;
-}
-
-.eyes .eye {
-  position: relative;
-  width: 55px;
-  height: 55px;
-  display: block;
-  background: white;
-  margin: 0 13px;
-  border-radius: 50%;
-}
-
-.eyes .eye::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  width: 37px;
-  height: 37px;
-  background: black;
-  border-radius: 50%;
+.retour a {
+  padding: 0% 8% 0% 8%;
+  margin-left: 2%;
 }
 
 
-
-
-#retour {
-  margin: 0% 5% 5% 5%;
-}
 
 .projets p{
   margin: 5% 5% 5% 5%;
 }
 
+
+
+
+
+
+
+.image_clavier {
+  width: 90%; 
+  height: width;
+  margin: 0% 0% 5% 5%;
+  cursor: pointer;
+}
+
+
+.illus_secondaire{
+  display:flex;
+  flex-flow: column;
+}
+
+.illus_secondaire img {
+  max-width: 80%;
+  height: auto;
+  align-self: center;
+  padding-bottom: 5%;
+  cursor: pointer;
+}
+
+
+
+#affiches_primaire {
+  width: 100%;
+  align-self: center;
+  cursor: pointer;
+}
+
+.affiches_secondaire{
+  display:flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.affiches_secondaire img {
+  width: 25%; 
+  padding: 3%;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+.affiches_secondaire img {
+  width: 80%;
+  padding: 5% 0 5% 0;
+}
+
+}
+
+
+
+  /* ////////////////// TAVERNE //////////////////// */
+
+.chopes{
+  display:flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.chopes_img {
+  width: 13.8%; 
+  height: width;
+  margin: 0% 0% 5% 5%;
+  cursor: pointer;
+}
+
+
+.persos{
+  display:flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+}
+
+.persos_img {
+  width: 25%; 
+  height: width;
+  margin: 0% 2% 5% 5%;
+  cursor: pointer;
+}
+
+
+
+.scenes{
+  display:flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+}
+
+.scenes_img {
+  width: 41%; 
+  height: width;
+  margin: 0% 2% 5% 5%;
+  cursor: pointer;
+}
+
+
+
+.scenes_dodo img{
+   width: 90%;
+
+}
 
 
 
@@ -339,9 +408,17 @@ background-repeat: repeat;
   height: 100%;
 }
 
-#invisible{
-	opacity: 0%;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -355,12 +432,9 @@ background-repeat: repeat;
 
   .name{    
     align-self: center;
-    margin: 5% 0 5% 0;
+    left: 6%;
   }
 
-  .eyes {
-    display: none;
-  }
 
   .tout_sauf_titre {
     display: flex;
@@ -380,13 +454,24 @@ background-repeat: repeat;
     padding: 5%;
   }
 
-
-  .chat{display:none;}
-
 .projets .chacun {
   margin-top: 8%;
 }
+
+.retour a {
+  padding: 0% 8% 0% 8%;
+  margin-left: 0%;
 }
+
+
+
+
+}
+
+
+
+
+
 
 
 

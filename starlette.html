@@ -9,45 +9,14 @@
     <link rel="shortcut icon" href="apparence/icon.png"/>
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nerko One">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
 
 
   </head>
   <body>
-         
-    <img class="name"src="apparence/name.png" alt="">
 
-    <img class="chat"src="apparence/chat.png" alt=""> 
-
-     <div class="face">
-            <div class="eyes">
-                <div class="eye"></div>
-                <div class="eye"></div>
-            </div>
-        </div>
-        
-       
-        <script>
-            document.querySelector(
-            "body").addEventListener("mousemove", eyeball);
-            function eyeball() {
-                var eye = document.querySelectorAll(".eye");
-                eye.forEach(function (eye) {
-                    let x =
-        eye.getBoundingClientRect().left + eye.clientWidth / 2;
-                    let y =
-        eye.getBoundingClientRect().top + eye.clientHeight / 2;
-                    let radian =
-                Math.atan2(event.pageX - x, event.pageY - y);
-                    let rot =
-            radian * (180 / Math.PI) * -1 + 270;
-                    eye.style.transform =
-                    "rotate(" + rot + "deg)";
-                });
-            }
-        </script>
-
-
-            <div class="tout_sauf_titre">
+    <p class="name">Lucie Amara</p>
+    <div class="tout_sauf_titre">
         
 
  <section class="presentation">
@@ -95,7 +64,15 @@ Réalisé avec les logiciels Adobe After Effect, Videopad et Reaper.
 
 </p>
 
-    <a id="retour"href="index.html"> <- Retour </a>
+       <div class="retour">
+
+    <a href="dodo.html"> <- Suivant </a>
+
+    <a href="index.html"> - Accueil - </a>
+
+    <a href="affiches.html"> Précédent -> </a>
+
+</div>
 
       
     </section>
