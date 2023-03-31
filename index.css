@@ -463,28 +463,23 @@ background-repeat: repeat;
   margin-left: 0%;
 }
 
-
-
-
 }
 
 
 
+@media screen and (max-width: 610px) {
 
+  .tout_sauf_titre {
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+  }
 
-
-
-
-@media screen and (max-width: 560px) {
- 
- #invisible{
- 	display: none;
- }
-
+  .retour a {
+  padding: 0% 2% 0% 2%;
+  margin-left: 2%;
 }
-
-
-
+}
 
 
 .modal {
