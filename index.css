@@ -508,15 +508,15 @@ background-repeat: repeat;
 .modal-content {
   margin: auto;
   display: block;
-  width: 90%;
-  max-width: 800px;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 #caption {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 90%;
   text-align: center;
   color: white;
   padding: 10px 0;
