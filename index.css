@@ -220,7 +220,6 @@ background-repeat: repeat;
   height: 100%;
 
   overflow: auto;
-  overflow-x: hidden;
 
 }
 
@@ -433,6 +432,7 @@ background-repeat: repeat;
   flex-wrap: wrap;
 
   overflow: auto;
+  overflow-x: hidden;
 
 }
 
