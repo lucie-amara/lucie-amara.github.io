@@ -2,163 +2,88 @@
 <html lang=fr>
   <head>
     <meta charset="utf-8">
-    <title>affiches de cirque</title>
+    <title>Zabaglione Circus</title>
 
-    <link href="index.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="shortcut icon" href="apparence/icon.png"/>
+     <link href="index.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="apparence/papier_jaune.jpg" />
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nerko One">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
 
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dekko">
+
 
   </head>
   <body>
+
+    <section class="page_content">
          
-          
-    <p class="name">Lucie Amara</p>
-    <div class="tout_sauf_titre">
+ <section class="presentation">
 
+      <p class="name">LUCIE </br> AMARA</p>
 
-     <section class="presentation">
+</br></br>
 
-         <p class="text">Etudiante en 3ème année de licence Etudes Visuelles Médias et Arts Numériques à l’université Gustave Eiffel.</p>
+         <p class="text">Graphiste diplômée d'une licence d'Études Visuelles, Médias et Arts Numériques.</p>
 
-          </br>
+</br></br>
 
-        <ul class="liens">
+         <ul class="liens">
        <li>
           <p>amara.lucie[at]orange.fr</p>         
         </li>
 
-          </ul>
+         </ul>
 
-    </section>
+</section>
 
-      
+         
     
-    <section class="projets">
 
-    	 <nav class="ariane">
+<nav class="ariane">
     <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><span aria-current="page">Affiches de cirque (2021)</span></li>
+        <li><a href="index.html"> ← Accueil</a></li>
     </ul>
 </nav>
 
-    <img id="affiches_primaire" src="files\affiches\affiche1.png" alt="">
+<div class="page">
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
+  <p class="titre_page">Zabaglione Circus (2021)</p>
 
-</div>
+    </br></br>
 
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("primaire");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
+   <img class="width_80" src="files\affiches\affiche1.png" alt="">
 
 <p>
+    </br>
+
       Affiche de cirque et variations de couleurs.
 
         </br></br>
 
       Réalisé sur Illustrator, après un semestre de cours.
 
+  </br></br>
 </p>
 
-  <div class="affiches_secondaire">
+  <img class="width_100" src="files\affiches\ensemble1.png" alt="">
 
-    <img class="secondaire_modal" src="files\affiches\affiche2.PNG" alt="">
-
-    <img class="secondaire_modal" src="files\affiches\affiche3.PNG" alt="">
-
-    <img class="secondaire_modal" src="files\affiches\affiche4.PNG" alt="">
-
-    <img class="secondaire_modal" src="files\affiches\affiche5.PNG" alt="">
-
-    <img class="secondaire_modal" src="files\affiches\affiche6.PNG" alt="">
-
-    <img class="secondaire_modal" src="files\affiches\affiche7.PNG" alt="">
-
-      <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-
-  </div>
+  <img class="width_100" src="files\affiches\ensemble2.png" alt="">
 
 
+</br></br></br>
 
+<nav class="ariane_bottom">
+        <a class="suivant" href="starlette.html"> ← Starlette </a>
+        &emsp;&emsp;&emsp;
+        <a class="precedent" href="taverne.html"> La Taverne → </a>
+</nav>
 
-  <script>
-// create references to the modal...
-var modal = document.getElementById('myModal');
-// to all images -- note I'm using a class!
-var images = document.getElementsByClassName('secondaire_modal');
-// the image in the modal
-var modalImg = document.getElementById("img01");
-// and the caption in the modal
-var captionText = document.getElementById("caption");
+</p>
 
-// Go through all of the images with our custom class
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  // and attach our click listener for this image.
-  img.onclick = function(evt) {
-    console.log(evt);
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
+</div> 
 
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-</script>
-
-
-    <div class="retour">
-
-    <a href="starlette.html"> < Suivant </a>
-
-    <a href="index.html"> - Accueil - </a>
-
-    <a href="taverne.html"> Précédent > </a>
-
-</div>
-
-      
-    </section>
-
-</div>
-    
-    
+</section>
     
   </body>  
 </html>

@@ -5,44 +5,52 @@
     <title>la taverne</title>
 
     <link href="index.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="shortcut icon" href="apparence/icon.png"/>
+    <link rel="shortcut icon" href="apparence/papier_jaune.jpg" />
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nerko One">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
 
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dekko">
+
 
   </head>
   <body>
+
+    <section class="page_content">
          
-    <p class="name">Lucie Amara</p>
-    <div class="tout_sauf_titre">
+ <section class="presentation">
 
+      <p class="name">LUCIE </br> AMARA</p>
 
-     <section class="presentation">
+</br></br>
 
-         <p class="text">Etudiante en 3ème année de licence Etudes Visuelles Médias et Arts Numériques à l’université Gustave Eiffel.</p>
+         <p class="text">Graphiste diplômée d'une licence d'Études Visuelles, Médias et Arts Numériques.</p>
 
-          </br>
+</br></br>
 
-          <ul class="liens">
+         <ul class="liens">
        <li>
           <p>amara.lucie[at]orange.fr</p>         
         </li>
 
-          </ul>
+         </ul>
 
-    </section>
+</section>
 
-      
+
+
     
-    <section class="projets">
 
-    	 <nav class="ariane">
+
+<nav class="ariane">
     <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><span aria-current="page">La Taverne (2021)</span></li>
+        <li><a href="index.html"> ← Accueil</a></li>
     </ul>
 </nav>
+
+<div class="page">
+
+  <p class="titre_page">La Taverne (2021)</p>
 
 <div class="video">
     <iframe width="560"
@@ -50,200 +58,86 @@
 </div>
 
 <p>
-     Après l'accomplissement d'une nouvelle quête épique, vous vous accordez une halte bien méritée au refuge des voyageurs : la Taverne. Dans une ambiance chaotique et conviviale, vous pariez vos maigres économies en jouant aux dés contre des adversaires un peu louches. Vos gains vous permettront de savourer les succulentes boissons proposées à la carte en sympathisant avec les autres clients.
+  </br></br>
+
+    Après l'accomplissement d'une nouvelle quête épique, vous vous accordez une halte bien méritée au refuge des voyageurs : la Taverne. Dans une ambiance chaotique et conviviale, vous pariez vos maigres économies en jouant aux dés contre des adversaires un peu louches. Vos gains vous permettront de savourer les succulentes boissons proposées à la carte en sympathisant avec les autres clients.
 
      </br></br>
 
      Réalisé sur Sublime Text, après deux semestres de cours de HTML et CSS en licence EVMAN. Dessins et animations sur Paint Tool Sai.
 
+  </br></br>
 </p>
 
-    <div class="chopes">
 
-    <img class="chopes_img" src="files\taverne\chope1.PNG" alt="">
+    <img class="width_20" src="files\taverne\chope1.PNG" alt="">
 
-    <img class="chopes_img" src="files\taverne\chope2.PNG" alt="">
+    <img class="width_20" src="files\taverne\chope2.PNG" alt="">
 
-    <img class="chopes_img" src="files\taverne\chope3.PNG" alt="">
+    <img class="width_20" src="files\taverne\chope3.PNG" alt="">
 
-    <img class="chopes_img" src="files\taverne\chope4.PNG" alt="">
+    <img class="width_20" src="files\taverne\chope4.PNG" alt="">
 
-    <img class="chopes_img" src="files\taverne\chope5.PNG" alt="">
-
-    </div>
-
-     <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-
-  <script>
-// create references to the modal...
-var modal = document.getElementById('myModal');
-// to all images -- note I'm using a class!
-var images = document.getElementsByClassName('chopes_img');
-// the image in the modal
-var modalImg = document.getElementById("img01");
-// and the caption in the modal
-var captionText = document.getElementById("caption");
-
-// Go through all of the images with our custom class
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  // and attach our click listener for this image.
-  img.onclick = function(evt) {
-    console.log(evt);
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-</script>
+    <img class="width_20" src="files\taverne\chope5.PNG" alt="">
 
 
 
-  <div class="persos">
-
-    <img class="persos_img" src="files\taverne\perso_1_2.gif" alt="">
-
-    <img class="persos_img" src="files\taverne\perso_1_1.gif" alt="">
-
-    <img class="persos_img" src="files\taverne\perso_1_3.gif" alt="">
 
 
+    <img class="width_33" src="files\taverne\perso_1_2.gif" alt="">
 
-    <img class="persos_img" src="files\taverne\perso_2_2.gif" alt="">
+    <img class="width_33" src="files\taverne\perso_1_1.gif" alt="">
 
-    <img class="persos_img" src="files\taverne\perso_2_1.gif" alt="">
-
-    <img class="persos_img" src="files\taverne\perso_2_3.gif" alt="">
+    <img class="width_33" src="files\taverne\perso_1_3.gif" alt="">
 
 
 
-    <img class="persos_img" src="files\taverne\perso_3_2.gif" alt="">
+    <img class="width_33" src="files\taverne\perso_2_2.gif" alt="">
 
-    <img class="persos_img" src="files\taverne\perso_3_1.gif" alt="">
+    <img class="width_33" src="files\taverne\perso_2_1.gif" alt="">
 
-    <img class="persos_img" src="files\taverne\perso_3_3.gif" alt="">
-
-  </div>
-
-   <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-
-
-  <script>
-// create references to the modal...
-var modal = document.getElementById('myModal');
-// to all images -- note I'm using a class!
-var images = document.getElementsByClassName('persos_img');
-// the image in the modal
-var modalImg = document.getElementById("img01");
-// and the caption in the modal
-var captionText = document.getElementById("caption");
-
-// Go through all of the images with our custom class
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  // and attach our click listener for this image.
-  img.onclick = function(evt) {
-    console.log(evt);
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-</script>
+    <img class="width_33" src="files\taverne\perso_2_3.gif" alt="">
 
 
 
-  <div class="scenes">
+    <img class="width_33" src="files\taverne\perso_3_2.gif" alt="">
 
-    <img class="scenes_img" src="files\taverne\the.gif" alt="">
+    <img class="width_33" src="files\taverne\perso_3_1.gif" alt="">
 
-    <img class="scenes_img" src="files\taverne\diabolo.gif" alt="">
-
-    <img class="scenes_img" src="files\taverne\petrole.gif" alt="">
-
-    <img class="scenes_img" src="files\taverne\chocolat.gif" alt="">
-
-    <img class="scenes_img" src="files\taverne\image.gif" alt="">
-
-    <img class="scenes_img" src="files\taverne\nope.gif" alt="">
-
-    </div>
-
-     <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
+    <img class="width_33" src="files\taverne\perso_3_3.gif" alt="">
 
 
-  <script>
-// create references to the modal...
-var modal = document.getElementById('myModal');
-// to all images -- note I'm using a class!
-var images = document.getElementsByClassName('scenes_img');
-// the image in the modal
-var modalImg = document.getElementById("img01");
-// and the caption in the modal
-var captionText = document.getElementById("caption");
-
-// Go through all of the images with our custom class
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  // and attach our click listener for this image.
-  img.onclick = function(evt) {
-    console.log(evt);
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-</script>
 
 
-    <div class="retour">
+    <img class="width_50" src="files\taverne\the.gif" alt="">
 
-    <a href="affiches.html"> < Suivant </a>
+    <img class="width_50" src="files\taverne\diabolo.gif" alt="">
 
-    <a href="index.html"> - Accueil - </a>
+    <img class="width_50" src="files\taverne\petrole.gif" alt="">
 
-    <a href="clavier.html"> Précédent > </a>
+    <img class="width_50" src="files\taverne\chocolat.gif" alt="">
+
+    <img class="width_50" src="files\taverne\image.gif" alt="">
+
+    <img class="width_50" src="files\taverne\nope.gif" alt="">
+
+
+</br></br></br>
+
+<nav class="ariane_bottom">
+        <a class="suivant" href="affiches.html"> ← Zabaglione Circus </a>
+        &emsp;&emsp;&emsp;
+        <a class="precedent" href="clavier.html"> Clavier ornithologique → </a>
+</nav>
+
+</p>
 
 </div>
+  
 
       
     </section>
-
-</div>
-    
+ 
     
     
   </body>  
