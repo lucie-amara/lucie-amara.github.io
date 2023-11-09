@@ -332,9 +332,10 @@ body {
 .ariane_bottom{
   padding-top: 5%;
   padding-bottom: 5%;
+  padding-left: 25%;
 }
 
-img{
+ .page_content img{
 	padding-bottom: 5%;
 }
 
@@ -421,10 +422,7 @@ img{
 }
 
 .name{
-  font-size: 80px;
   text-align: center;
-  font-family: Nerko One;
-  line-height: 60px;
 }
 
 .chacun a {
