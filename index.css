@@ -60,7 +60,7 @@ body {
     background-attachment: fixed;
 
   overflow: hidden;
-  background-color: red;
+  background-color: rgb(255, 190, 51);
 
   cursor: url(''), auto;
 
