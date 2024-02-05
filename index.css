@@ -73,7 +73,7 @@ body {
 
 
 .presentation{
-  background-color: gold;
+  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -84,7 +84,7 @@ body {
   padding: 1%;
   padding-right: 1.5%;
 
-  color: black;
+  color: gold;
   border-right: 1px solid black;
 }
 
@@ -95,8 +95,7 @@ body {
   text-align: right;
   font-family: Nerko One;
   line-height: 60px;
-  color: darkorange;
-  text-shadow: 6px 3px red;
+  color: gold;
 }
 
 .liens{
@@ -470,8 +469,12 @@ body {
 
 .presentation a {
  
-  color: red;
+  color: gold;
   font-size: 16px;
   text-decoration: underline;
+}
+
+a:hover {
+ font-style: italic;
 }
 
